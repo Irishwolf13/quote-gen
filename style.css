@@ -37,8 +37,8 @@ body {
     font-size: 2rem;
 }
 
-.fa-quote-left {
-    font-size: 4rem;
+.quote-text i{
+    font-size: 3rem;
 }
 
 .quote-author {
@@ -89,6 +89,6 @@ button:active {
     }
 
     .quote-text {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 }

@@ -4,21 +4,30 @@ const authorText = document.getElementById('author');
 const twitterButton = document.getElementById('twitter');
 const newQuoteBtn = document.getElementById('new-quote');
 
+let myNumber = -1;
+
 // let apiQuotes = [];
 
 // Show New Quote
 function newQuote() {
-    // Pick a random quote from apiQuotes array
-    const quote = localQuotes[Math.floor(Math.random() * localQuotes.length)];
+    let randomNumber = getRandomNumber();
+    // Checks to see if the New quote is the same as the last quote given
+    while (randomNumber == myNumber) {
+        randomNumber = getRandomNumber();
+    }
+    myNumber = randomNumber;
+    const quote = localQuotes[myNumber];
     quoteText.textContent = quote.text;
+
     // Checks to see if there is an Author
     if (!quote.author) {
         authorText.textContent = "Unknown";
     } else {
         authorText.textContent = quote.author;
     }
+
     // Checks to see if it's a really long Quote and adjusts the size
-    if (quote.text.length > 120) {
+    if (quote.text.length > 100) {
         quoteText.classList.add('long-quote');        
     } else {
         quoteText.classList.remove('long-quote');
@@ -43,6 +52,11 @@ function newQuote() {
 function tweetQuote() {
     const twitterUrl = `https://twitter.com/intent/tweet?text=${quoteText.textContent} - ${authorText.textContent}`;
     window.open(twitterUrl, '_blank'); //The '_blank' makes it so Twitter opens in a new Tab.
+}
+
+// Gets random number from 0 to number of objects in localQuotes[]
+function getRandomNumber(){
+    return Math.floor(Math.random() * localQuotes.length);
 }
 
 //Event Listeners
