@@ -92,3 +92,9 @@ button:active {
         font-size: 2rem;
     }
 }
+
+@media (max-width: 580px) {
+    button:hover {
+        color: #fff;
+    }
+  }
