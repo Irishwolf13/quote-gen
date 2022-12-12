@@ -3,6 +3,7 @@ const quoteText = document.getElementById('quote');
 const authorText = document.getElementById('author');
 const twitterButton = document.getElementById('twitter');
 const newQuoteBtn = document.getElementById('new-quote');
+const quoteImage = document.getElementById('image')
 
 let myNumber = -1;
 
@@ -18,6 +19,7 @@ function newQuote() {
     myNumber = randomNumber;
     const quote = localQuotes[myNumber];
     quoteText.textContent = quote.text;
+    quoteImage.src=localQuotes[myNumber].image;
 
     // Checks to see if there is an Author
     if (!quote.author) {
