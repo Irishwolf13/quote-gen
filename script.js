@@ -1,6 +1,6 @@
 const quoteContainer = document.getElementById('quote-container');
 const quoteText = document.getElementById('quote');
-const authorText = document.getElementById('author');
+const characterText = document.getElementById('author');
 const twitterButton = document.getElementById('twitter');
 const newQuoteBtn = document.getElementById('new-quote');
 const quoteImage = document.getElementById('image')
@@ -20,10 +20,10 @@ function newQuote() {
     quoteText.textContent = quote.text;             // Stores the quote from new object.text retrieved from pervious line
     quoteImage.src=localQuotes[myNumber].image;     // Changes the image as well
 
-    if (!quote.author) {                            // Checks to see if there is an Author
-        authorText.textContent = "Unknown";         // If there isn't, returns "Unknown"
+    if (!quote.character) {                            // Checks to see if there is an Author
+        characterText.textContent = "Unknown";         // If there isn't, returns "Unknown"
     } else {
-        authorText.textContent = quote.author;      // Changes Author to new object.author retrieved from pervious line
+        characterText.textContent = quote.character;      // Changes Author to new object.author retrieved from pervious line
     }
 
     if (quote.text.length > 100) {                  // Checks to see if it's a really long
@@ -49,7 +49,7 @@ function newQuote() {
 
 //Tweet Quote
 function tweetQuote() {
-    const twitterUrl = `https://twitter.com/intent/tweet?text=${quoteText.textContent} - ${authorText.textContent}`;
+    const twitterUrl = `https://twitter.com/intent/tweet?text=${quoteText.textContent} - ${characterText.textContent}`;
     window.open(twitterUrl, '_blank'); //The '_blank' makes it so Twitter opens in a new Tab.
 }
 
