@@ -12,29 +12,26 @@ let myNumber = -1;
 // Show New Quote
 function newQuote() {
     let randomNumber = getRandomNumber();
-    // Checks to see if the New quote is the same as the last quote given
-    while (randomNumber == myNumber) {
-        randomNumber = getRandomNumber();
+    while (randomNumber == myNumber) {              // Checks to see if the New quote is the same as the last quote given
+        randomNumber = getRandomNumber();           // While the random number is the same as myNumber, it will keep trying to get a different random Number
     }
-    myNumber = randomNumber;
-    const quote = localQuotes[myNumber];
-    quoteText.textContent = quote.text;
-    quoteImage.src=localQuotes[myNumber].image;
+    myNumber = randomNumber;                        // Sets myNumber to the Random Number
+    const quote = localQuotes[myNumber];            // Grabs the object associated with my random number from the quotes.js array. (quotes.js linked via index.HTML)
+    quoteText.textContent = quote.text;             // Stores the quote from new object.text retrieved from pervious line
+    quoteImage.src=localQuotes[myNumber].image;     // Changes the image as well
 
-    // Checks to see if there is an Author
-    if (!quote.author) {
-        authorText.textContent = "Unknown";
+    if (!quote.author) {                            // Checks to see if there is an Author
+        authorText.textContent = "Unknown";         // If there isn't, returns "Unknown"
     } else {
-        authorText.textContent = quote.author;
+        authorText.textContent = quote.author;      // Changes Author to new object.author retrieved from pervious line
     }
 
-    // Checks to see if it's a really long Quote and adjusts the size
-    if (quote.text.length > 100) {
-        quoteText.classList.add('long-quote');        
+    if (quote.text.length > 100) {                  // Checks to see if it's a really long
+        quoteText.classList.add('long-quote');      // If it is a really long quote, adds size adjustment
     } else {
-        quoteText.classList.remove('long-quote');
+        quoteText.classList.remove('long-quote');   // If it's not really long, it removes the size adjustment
     }
-    quoteText.textContent = quote.text;
+    quoteText.textContent = quote.text;             // Changes the quote to stored quote
 }
 
 // Get Quotes form API

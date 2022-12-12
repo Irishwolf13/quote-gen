@@ -15,7 +15,7 @@ const localQuotes = [
         image: 'images/ScottyEnergizerDown.PNG'
     },
     {
-        text: "Who's been holding up the damn elevtor?",
+        text: "Who's been holding up the damn elevator?",
         author: 'Dr. McCoy',
         image: 'images/BonesHoldElevator.PNG'
     },
@@ -28,5 +28,10 @@ const localQuotes = [
         text: "I've hurt you... and I wish to go on... hurting you.",
         author: 'Khan',
         image: "images/KhanHurtYou.PNG"
+    },
+    {
+        text: "Made us say lies. Do things. But we beat him.  He thought he controlled us but, he did not.",
+        author: 'Pavel Chekov',
+        image: "images/ChechMadeUsSayLies.PNG"
     },
 ]
