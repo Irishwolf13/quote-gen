@@ -9,7 +9,7 @@ body {
     margin: 0;
     min-height: 100vh;
     background-color: #f1f0fe;
-    background-image: url(/images/backgrounds/seamless\ space.PNG);
+    background-image: url(images/backgrounds/blackSpace.PNG);
     color: #000;
     /* This calls the google font, with a fallback of sans-serif if it doesn't work */
     font-family: Montserrat, sans-serif;
