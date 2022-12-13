@@ -6,6 +6,7 @@ const newQuoteBtn = document.getElementById('new-quote');
 const quoteImage = document.getElementById('image')
 
 let myNumber = -1;
+let myImage = 0;
 
 // let apiQuotes = [];
 
@@ -49,7 +50,7 @@ function newQuote() {
 
 //Tweet Quote
 function tweetQuote() {
-    const twitterUrl = `https://twitter.com/intent/tweet?text=${quoteText.textContent} - ${characterText.textContent}`;
+    const twitterUrl = `https://twitter.com/intent/tweet?text=${myImage}${quoteText.textContent} - ${characterText.textContent}`;
     window.open(twitterUrl, '_blank'); //The '_blank' makes it so Twitter opens in a new Tab.
 }
 

@@ -20,6 +20,21 @@ const localQuotes = [
         image: "images/Kirk/KirkNoWinSituation.PNG"
     },
     {
+        text: `How we deal with death, is at least as important as how we deal with life, wouldn't you say?`,
+        character: 'Kirk',
+        image: "images/Kirk/KirkHowWeDealWithDeath.PNG"
+    },
+    {
+        text: `Galloping around the cosmos is a game for the young Doctor`,
+        character: 'Kirk',
+        image: "images/Kirk/KirkGaloping.PNG"
+    },
+    {
+        text: `Aren't you dead?`,
+        character: 'Kirk',
+        image: "images/Kirk/KirkArentYouDead.PNG"
+    },
+    {
         text: "We're just hanging on Sir, the main energizer is out!",
         character: 'Scotty',
         image: 'images/Scotty/ScottyEnergizerDown.PNG'
@@ -33,6 +48,11 @@ const localQuotes = [
         text: "Is that all you've got to say?  What about my performance?",
         character: 'Dr. McCoy',
         image: 'images/Bones/BonesWhatAboutMyPerformance.PNG'
+    },
+    {
+        text: "Admiral, wouldn't it be easier to just put an experienced crew back on the ship?",
+        character: 'Dr. McCoy',
+        image: 'images/Bones/BonesEasierCrew.PNG'
     },
     {
         text: "Its no use, there is no repsonse from Regula 1.",
@@ -53,5 +73,10 @@ const localQuotes = [
         text: "May I remind the captain if a starship enters this zone...",
         character: 'Hikaru Sulu',
         image: "images/Sulu/SuluMayIRemindTheCaptain.PNG"
+    },
+    {
+        text: "As I indicated Admiral, that thought had not occured to me.",
+        character: 'Lieutenant Saavik',
+        image: "images/Saavik/SaavikItHasNot.PNG"
     },
 ]
