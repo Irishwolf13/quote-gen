@@ -10,7 +10,7 @@ const localQuotes = [
         image: "images/Kirk/KirkKhannnn.PNG"
     },
     {
-        text: "Prayer Mr. Savok. The klingons don't take prisoners.",
+        text: "Prayer, Mr. Savok.  The klingons don't take prisoners.",
         character: 'Kirk',
         image: "images/Kirk/KirkKlingonsPrisioner.PNG"
     },
@@ -60,7 +60,7 @@ const localQuotes = [
         image: "images/Uhura/UhuraRegula1.PNG"
     },
     {
-        text: "I've hurt you... and I wish to go on... hurting you.",
+        text: "I've done far worse than kill you.  I've hurt you... and I wish to go on... hurting you.",
         character: 'Khan',
         image: "images/Khan/KhanHurtYou.PNG"
     },

@@ -42,7 +42,7 @@ body {
 }
 
 .long-quote {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .quote-text i{
@@ -91,7 +91,7 @@ button:active {
 }
 
 /* Media Query: Table or smaller */
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 700px) {
     .quote-container{
         margin: auto 10px;
     }
@@ -103,6 +103,9 @@ button:active {
     .image-container {
         max-width: 300px;
 
+    }
+    .quote-text i{
+        font-size: 2.5rem;
     }
 }
 

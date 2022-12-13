@@ -63,6 +63,24 @@ function getRandomNumber(){
 newQuoteBtn.addEventListener('click', newQuote);
 twitterButton.addEventListener('click', tweetQuote);
 
+
+// Classwork here:
+// const newArray = localQuotes.map(item => item.character)
+// //console.log(newArray)
+
+// const quotesfoo = (item) => item.text;
+// const arrayOfQuotes = localQuotes.map(quotesfoo)
+// //console.log(arrayOfQuotes)
+
+// const copyOfLocalQuotes = localQuotes.map((item) => {
+//     const myNewArray = Object.assign({}, item)
+//     return myNewArray
+// })
+
+// console.log(copyOfLocalQuotes)
+
+// Classwork here:
+
 // On Load
 // getQuotes();
 newQuote();
