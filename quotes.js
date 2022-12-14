@@ -35,6 +35,11 @@ const localQuotes = [
         image: "images/Kirk/KirkArentYouDead.PNG"
     },
     {
+        text: `It had the virtue of never being tried.`,
+        character: 'Kirk',
+        image: "images/Kirk/KirkVirtueNeverTried.PNG"
+    },
+    {
         text: "We're just hanging on Sir, the main energizer is out!",
         character: 'Scotty',
         image: 'images/Scotty/ScottyEnergizerDown.PNG'

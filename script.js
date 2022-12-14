@@ -4,14 +4,28 @@ const characterText = document.getElementById('author');
 const twitterButton = document.getElementById('twitter');
 const newQuoteBtn = document.getElementById('new-quote');
 const quoteImage = document.getElementById('image')
+const loader = document.getElementById('loader');
 
 let myNumber = -1;
 let myImage = 0;
+
+// Show Loading
+function loading() {
+    loader.hidden = false;
+    quoteContainer.hidden = true;
+}
+// Hide Loading
+
+function complete() {
+    quoteContainer.hidden = false;
+    loader.hidden = true;
+}
 
 // let apiQuotes = [];
 
 // Show New Quote
 function newQuote() {
+    loading();
     let randomNumber = getRandomNumber();
     while (randomNumber == myNumber) {              // Checks to see if the New quote is the same as the last quote given
         randomNumber = getRandomNumber();           // While the random number is the same as myNumber, it will keep trying to get a different random Number
@@ -33,6 +47,7 @@ function newQuote() {
         quoteText.classList.remove('long-quote');   // If it's not really long, it removes the size adjustment
     }
     quoteText.textContent = quote.text;             // Changes the quote to stored quote
+    complete();
 }
 
 // Get Quotes form API
@@ -64,8 +79,8 @@ newQuoteBtn.addEventListener('click', newQuote);
 twitterButton.addEventListener('click', tweetQuote);
 
 
-// Classwork here:
-// const newArray = localQuotes.map(item => item.character)
+//Classwork here:
+// const newArray = localQuotes.map((item) => item.character)
 // //console.log(newArray)
 
 // const quotesfoo = (item) => item.text;
@@ -79,7 +94,11 @@ twitterButton.addEventListener('click', tweetQuote);
 
 // console.log(copyOfLocalQuotes)
 
-// Classwork here:
+// function varFunction(value) {
+//     console.log('Frank');
+// }
+
+//Classwork here:
 
 // On Load
 // getQuotes();
